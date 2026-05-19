@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>dmitry@paladinsolutions.io</contactEmail>
+    <label>PlaywrightTestApp</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost/callback</callbackUrl>
+        <certificate>MIIDbjCCAlagAwIBAgIUedgiGMI2KF3xKfecCrGcfdqvg2wwDQYJKoZIhvcNAQELBQAwVzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFRlc3QxDTALBgNVBAcMBFRlc3QxEDAOBgNVBAoMB1Rlc3RPcmcxGDAWBgNVBAMMD3NhbGVzZm9yY2UtdGVzdDAeFw0yNjA1MTYxOTQwMDRaFw0yOTA1MTUxOTQwMDRaMFcxCzAJBgNVBAYTAlVTMQ0wCwYDVQQIDARUZXN0MQ0wCwYDVQQHDARUZXN0MRAwDgYDVQQKDAdUZXN0T3JnMRgwFgYDVQQDDA9zYWxlc2ZvcmNlLXRlc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCOgofIae1bYdLIoTJK0T+iCcKC9XukStPA6KdvbCsFyEWqV41TwIgeCB8SbIaejIZsHnmg08nC8lsHnFK0nJ/T8zjrhW0mhu6tUOadAILfHaxe77/TKeNNAglgx84y+txMD+r3m/3I5Vlti23A8pqQ+4API2euWhIKhzbqwsJo+XJngR0tcx5+x/rmZkuGSxWWis+zuHDXaVQr5UtXELpwCL55XQPLYIyRUq9nyVIAswqztfJrcJ/j8Tn9FBNPsD819lyx/KiMWNwdpkQ7hNi0PgM4+1Ym8rYWcegsMXyloLlX37eUEvmBy3fGqz9Ydbk8x+fAsHcZx1/+JzAg9LKnAgMBAAGjMjAwMB0GA1UdDgQWBBSOkZmcbZ1KNSIORHOtwTU2fCwBsTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQB7Q3Bn3QXmmwGjSFVXgHiYgMgw+R36KADRnPUfS47RiJBr4gUwk5XlRa2yj2HHFVANs9cvfXQDAKgaav+725l7jw2/W/MxO9sgLKOHjrWHCHVR3GsIXjq4ziuggn5+LyOJItuQKYvWDkgtdgOefKVZ9SS5MklhOeQUbubzcklCbxuBfSB/LjqkQj5lf2mPbSZLFZ7yRGW4W97ZX1aBGoPufWVjYsXSRKrmvKE2iflvM21z/MRmykmD04N1uil6+4Y+GsfqO4rO3NTjDcNlDLWxUKdbLNx3ZvHjFF+x3UTz8hS/zF3CPRIP9GP3fTd6Trvv+Rsh/PoqxJyWXE38H8rM</certificate>
+        <consumerKey>3MVG9JJwBBbcN47ItdcBU1.7_7HJNoTBJKfaQ3KY.C.rf4XqoLztm8QWP3PvRhrliZoWY0Mg0To7b7O.4JIWn</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>
