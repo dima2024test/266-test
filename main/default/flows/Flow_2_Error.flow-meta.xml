@@ -17,6 +17,13 @@
                 <stringValue>123</stringValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>account.NumberOfEmployees</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>10.0</numberValue>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Create_Account</targetReference>
         </connector>
