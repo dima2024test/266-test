@@ -5,7 +5,7 @@
         <name>Assignment_Id</name>
         <label>Assignment Id</label>
         <locationX>176</locationX>
-        <locationY>158</locationY>
+        <locationY>134</locationY>
         <assignmentItems>
             <assignToReference>account.Fax</assignToReference>
             <operator>Assign</operator>
@@ -49,8 +49,28 @@
         <name>Create_Account</name>
         <label>Create Account</label>
         <locationX>176</locationX>
-        <locationY>278</locationY>
+        <locationY>242</locationY>
+        <connector>
+            <targetReference>Createopppppppppp</targetReference>
+        </connector>
         <inputReference>account</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <name>Createopppppppppp</name>
+        <label>Createopppppppppp</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <inputAssignments>
+            <field>CloseDate</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+        </inputAssignments>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <start>
         <locationX>50</locationX>
@@ -59,7 +79,7 @@
             <targetReference>Assignment_Id</targetReference>
         </connector>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
     <variables>
         <name>account</name>
         <dataType>SObject</dataType>
