@@ -5,7 +5,7 @@
         <name>Assignment_Id</name>
         <label>Assignment Id</label>
         <locationX>176</locationX>
-        <locationY>134</locationY>
+        <locationY>242</locationY>
         <assignmentItems>
             <assignToReference>account.Fax</assignToReference>
             <operator>Assign</operator>
@@ -56,7 +56,7 @@
         <name>Create_Account</name>
         <label>Create Account</label>
         <locationX>176</locationX>
-        <locationY>242</locationY>
+        <locationY>350</locationY>
         <connector>
             <targetReference>Createopppppppppp</targetReference>
         </connector>
@@ -66,7 +66,7 @@
         <name>Createopppppppppp</name>
         <label>Createopppppppppp</label>
         <locationX>176</locationX>
-        <locationY>350</locationY>
+        <locationY>458</locationY>
         <inputAssignments>
             <field>CloseDate</field>
         </inputAssignments>
@@ -79,11 +79,24 @@
         <object>Opportunity</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
+    <recordLookups>
+        <name>GetContacts234</name>
+        <label>GetContacts234</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assignment_Id</targetReference>
+        </connector>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Assignment_Id</targetReference>
+            <targetReference>GetContacts234</targetReference>
         </connector>
     </start>
     <status>Active</status>

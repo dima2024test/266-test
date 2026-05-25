@@ -5,7 +5,7 @@
         <name>Assignment_Account</name>
         <label>Assignment Account</label>
         <locationX>176</locationX>
-        <locationY>134</locationY>
+        <locationY>242</locationY>
         <assignmentItems>
             <assignToReference>account.Fax</assignToReference>
             <operator>Assign</operator>
@@ -53,7 +53,7 @@
         <name>Create_Account</name>
         <label>Create Account</label>
         <locationX>176</locationX>
-        <locationY>242</locationY>
+        <locationY>350</locationY>
         <connector>
             <targetReference>Createoppppppp</targetReference>
         </connector>
@@ -63,7 +63,7 @@
         <name>Createoppppppp</name>
         <label>Createoppppppp</label>
         <locationX>176</locationX>
-        <locationY>350</locationY>
+        <locationY>458</locationY>
         <inputAssignments>
             <field>CloseDate</field>
         </inputAssignments>
@@ -76,11 +76,24 @@
         <object>Opportunity</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
+    <recordLookups>
+        <name>Get_Casesewer</name>
+        <label>Get Cases</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assignment_Account</targetReference>
+        </connector>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Assignment_Account</targetReference>
+            <targetReference>Get_Casesewer</targetReference>
         </connector>
     </start>
     <status>Active</status>
